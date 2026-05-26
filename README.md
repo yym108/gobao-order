@@ -27,7 +27,7 @@ ln -sfn workspace/gobao-proto ../gobao-proto
 
 ## 环境变量
 
-可参考 [.env.example](/Users/yym/GolandProjects/GoBao/gobao-order/.env.example)：
+可参考仓库根目录 `.env.example`：
 
 - `ORDER_MYSQL_DSN`
 - `ORDER_PRODUCT_GRPC_ADDR`
@@ -42,3 +42,5 @@ ln -sfn workspace/gobao-proto ../gobao-proto
 go test ./...
 go run ./cmd/server
 ```
+
+如需容器化启动，可直接使用仓库内 `Dockerfile`，或由 `gobao-deploy` / `GoBao` 主仓统一编排。
